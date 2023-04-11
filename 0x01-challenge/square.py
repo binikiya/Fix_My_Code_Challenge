@@ -8,7 +8,7 @@ class Square():
     height = 0
     
     def __init__(self, *args, **kwargs):
-        """ The start of Square class """
+        """ Instantiation of class """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -21,10 +21,11 @@ class Square():
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ Printable representation """
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
-    """ Main function of Square class """
+    """ Create a square object """
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
