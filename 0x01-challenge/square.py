@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Square class midel definition """
+""" Module for square class"""
 
 
 class Square():
